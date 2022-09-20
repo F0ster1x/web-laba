@@ -1,0 +1,702 @@
+.ww{
+    display: flex;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid black;
+}
+.bContentTables{
+    font-family: 'Montserrat', sans-serif;
+    border:1px solid #CCCCCC;
+    width:100%;
+    moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari, Google Chrome */
+    -khtml-border-radius: 10px; /* KHTML */
+    -o-border-radius: 10px; /* Opera */
+    -ms-border-radius: 10px; /* IE8 */
+    border-radius: 10px; /* CSS3 */
+    overflow:hidden;
+    margin:0.7em auto;
+}
+.upload_form{
+    margin-top: 25px;
+}
+.main_input_file {
+    display: none;
+}
+.photoDescription{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload_form div {
+    width: 100px;
+    height: 32px;
+    background: rgba(9, 86, 147, 0.72);
+    border-radius: 25px;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    font-family: arial;
+    font-size:14px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.upload_form div:hover {
+    background: rgba(81, 134, 176, 0.72);
+    cursor: pointer;
+}
+
+#f_name {
+    background: transparent;
+    border: 0;
+    display: inline-block;
+    vertical-align: top;
+    height: 30px;
+    padding: 0 8px;
+    width: 175px;
+}
+.publish{
+    margin-top: 20px;
+}
+.Add{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    background: white;
+    letter-spacing: 0.068em;
+}
+p{
+    color: #ffffff;
+    font-size: 26px;
+    margin: 0;
+}
+h2,h3,h4,h5,h6{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    padding-top: 50px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 76px;
+    line-height: 93px;
+    color: #FFF;
+    margin: 0;
+}
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width:  1100px;
+    max-width: 100%;
+    margin: 0 auto; /*позиционирование по центру*/
+}
+.menu{
+    background: #6D9ECB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 73px;
+    padding-right: 73px;
+    max-width: 100%;
+    margin: 0 auto; /*позиционирование по центру*/
+}
+.q{
+  margin-bottom: 25px;
+}
+#logIN{
+  background: #547b98;
+}
+button {
+    /* Сбрасываем дефолтные стили */
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    /* Можно также использовать любые встроенные и кастомные шрифты, например, отсюда  */
+    font-family: Roboto, Verdana, Tahoma, sans;
+    /* Тут можно поэкспериментировать */
+    padding: 12px 30px;
+    border-radius: 100px;
+    color: #64baff;
+    background: #EFEFEC ;
+}
+.Sign{
+    margin-right: 50px;
+}
+body{
+    background: #99C6F0;
+}
+.photoAdd{
+    display: flex;
+    align-items: center;
+    border-style: solid ;
+    border-color: #FFFFFF;
+    width: 955px;
+    height: 545px;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 100px;
+}
+.imgcard{
+    width: 420px;
+}
+.img1{
+width: 369px;
+    height: 340px;
+}
+.public{
+    margin: auto;
+    width: 900px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    background-color: #6d9ecb;
+    border-radius: 100px;
+    justify-content: center;
+}
+.check1{
+    transform: scale(1.5);
+    margin-left: 50px;
+}
+.cards{
+    margin-top: 50px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.inside{
+    position: absolute;
+    padding-left: 30px;
+    padding-top: 16px;
+    font-size: 24px;
+}
+.card{
+    margin-top: 30px;
+}
+/*модальное окно*/
+.agree{
+  font-size: 19px;
+}
+.cross{
+    position: absolute;
+    left: 88%;
+    top: 9%;
+    cursor: pointer;
+}
+.cross1{
+    position: absolute;
+    left: 88%;
+    top: 5%;
+    cursor: pointer;
+}
+#zatemnenie {
+    position: absolute;
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+#okno {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 565px;
+    height: 350px;
+    left: 32%;
+    top: 25%;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+#okno2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 565px;
+    height: 620px;
+    left: 30%;
+    top: 3%;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.modalreg{
+    margin-left: 188px;
+}
+#zatemnenie:target {display: block;}
+#zatemnenie2:target {display: block;}
+.close {
+    display: inline-block;
+    text-decoration: none;
+    cursor:pointer;
+    font-size: 18px;
+    color: white;
+
+}
+.close1 {
+    display: inline-block;
+    text-decoration: none;
+    cursor:pointer;
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+}
+.newbut{
+    margin-left: 0px;
+    margin-top: 50px;
+    padding: 12px 30px 12px 30px;
+}
+.colorenter{
+    color: white;
+    text-decoration: none;
+}
+.reg{
+  margin-bottom: 20px;
+}
+input[type="text"] {
+    width: 336px;
+    height: 30px;
+    font-size: 24px;
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px solid #c3c3c3;
+}
+input[type="password"] {
+    width: 336px;
+    height: 30px;
+    font-size: 24px;
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px solid #c3c3c3;
+}
+input:focus {
+    border-color: red;
+}
+.textbox{
+    margin-top: 30px;
+}
+.yes{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    align-items: center;
+}
+
+
+
+/*Тут про адаптацию*/
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    #okno2{
+        left: 20%;
+    }
+
+}
+@media screen and (max-width: 991px) {
+    .container{
+        width: 870px;
+    }
+    #okno{
+        left: 20%;
+    }
+    .loc{
+        margin-left: 10px;
+    }
+    .city{
+        padding-right: 10px;
+    }
+    .menu{
+        padding-left: 50px;
+    }
+    .image1{
+        width: 45%;
+    }
+    .photoAdd{
+        width: 685px;
+        height: 400px;
+    }
+    .menu{
+        display: flex;
+    }
+    .Sign {
+        margin-right: 0px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    button {
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-bottom: 20px;
+
+    }
+    .public {
+        width: 690px;
+    }
+    .img{
+        width: 85%;
+    }
+    .imgcard {
+        width: 360px;
+    }
+    p{
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width: 870px) {
+    .container{
+        width: 90%;
+    }
+    .menu{
+        padding-right: 0px;
+    }
+    button{
+        margin-left: 10px;
+    }
+    .image1{
+        width: 45%;
+    }
+    .photoAdd{
+        width: 685px;
+        height: 400px;
+    }
+    .menu{
+        display: flex;
+    }
+    .Sign {
+        margin-right: 0px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    button {
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-bottom: 20px;
+
+    }
+    .public {
+        width: 690px;
+    }
+    .img{
+        width: 85%;
+    }
+    .imgcard {
+        width: 360px;
+    }
+    p{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 802px) {
+    .menu{
+        padding-left: 10px;
+    }
+    #okno2{
+        zoom: 0.8;
+    }
+    .loc, .city{
+        display: none;
+    }
+    .image1{
+        width: 45%;
+    }
+    .photoAdd{
+        width: 685px;
+        height: 400px;
+    }
+    .menu{
+        display: flex;
+    }
+    .Sign {
+        margin-right: 0px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    button {
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-bottom: 20px;
+
+    }
+    .public {
+        width: 690px;
+    }
+    .img{
+        width: 85%;
+    }
+    .imgcard {
+        width: 360px;
+    }
+    p{
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width: 736px) {
+    .cards{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .city{
+        display: none;
+    }
+    .loc{
+        display: none;
+    }
+    .mail{
+        font-size: 12px;
+    }
+    #footer{
+        height: 90px;
+    }
+    #okno{
+        zoom: 0.8;
+    }
+    .menu{
+        display: none;
+    }
+    .menu, .logo{
+        display: none;
+    }
+    .menu-open {
+        display: block;
+    }
+    .menu{
+        display: flex;
+    }
+    .image1{
+        width: 45%;
+    }
+
+    .photoAdd{
+        width: 560px;
+        height: 350px;
+    }
+    .public {
+        width: 500px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-bottom: 20px;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #okno2{
+        left: 15%;
+        top: 10%;
+        zoom: 0.6;
+    }
+    #okno{
+        left: 10%;
+        zoom: 0.6;
+        width: 530px;
+    }
+    .card{
+        zoom: 0.8;
+    }
+    .image1{
+        width: 45%;
+    }
+    .photoAdd{
+        width: 290px;
+        height: 170px;
+    }
+    .menu{
+        display: flex;
+    }
+    .Sign {
+        margin-right: 0px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    button {
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-bottom: 20px;
+
+    }
+    .public {
+        width: 300px;
+    }
+    .img{
+        width: 85%;
+    }
+    .imgcard {
+        width: 360px;
+    }
+    p{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    #okno2{
+        left: 12%;
+        width: 469px;
+    }
+    #okno{
+        width: 470px;
+    }
+    .card{
+        zoom: 0.8;
+    }
+    .image1{
+        width: 45%;
+    }
+    .photoAdd{
+        width: 290px;
+        height: 170px;
+    }
+    .menu{
+        display: flex;
+    }
+    .Sign {
+        margin-right: 0px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    button {
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-bottom: 20px;
+
+    }
+    .public {
+        width: 300px;
+    }
+    .img{
+        width: 85%;
+    }
+    .imgcard {
+        width: 360px;
+    }
+    p{
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .mail{
+        font-size: 10px;
+    }
+    #okno2{
+        zoom: 0.5;
+    }
+    #okno{
+        zoom: 0.5;
+    }
+    .image1{
+        width: 45%;
+    }
+    .photoAdd{
+        width: 290px;
+        height: 170px;
+    }
+    .menu{
+        display: flex;
+    }
+    .Sign {
+        margin-right: 0px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    button {
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-bottom: 20px;
+
+    }
+    .public {
+        width: 300px;
+    }
+    .img{
+        width: 85%;
+    }
+    .imgcard {
+        width: 360px;
+    }
+    p{
+        font-size: 20px;
+    }
+}

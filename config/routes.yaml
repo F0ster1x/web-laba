@@ -1,0 +1,33 @@
+detail:
+  path: /
+  controller: App\Controller\MainController::show
+  methods: GET
+
+infoScreen:
+  path: /infoScreen/{id}
+  controller: App\Controller\MainController::infoScreen
+  methods: GET
+
+screenshot:
+  path: /screenshot
+  controller: App\Controller\MainController::screenshot
+  methods: GET
+
+addScreenshot:
+  path: /addScreenshot
+  controller: App\Controller\AddScreenController::addScreenshot
+  methods: GET
+
+addUser:
+  path: /addUser
+  controller: App\Controller\MainController::addUser
+
+enter:
+  path: /enter
+  controller: App\Controller\MainController::enter
+  methods: GET
+
+exit:
+  path: /exit
+  controller: App\Controller\MainController::exit
+  methods: GET
